@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Student Calendar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOGIN PAGE -->
+
+    <div class="login-container" id="loginContainer">
+
+        <div class="left-panel">
+
+            <h1>📚 Smart College Calendar</h1>
+
+            <p>
+                Manage assignments, coding practice,
+                exams and reminders easily 🚀
+            </p>
+
+        </div>
+
+        <div class="right-panel">
+
+            <div class="login-box">
+
+                <h2>Enter Your Name</h2>
+
+                <input type="text"
+                    id="username"
+                    placeholder="Enter Your Name">
+
+                <button onclick="login()">
+                    Enter Calendar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN APP -->
+
+    <div class="app-container" id="appContainer">
+
+        <header>
+
+            <h1 id="welcomeText">
+                🎓 Student Planner
+            </h1>
+
+            <button class="logout-btn"
+                onclick="logout()">
+                Logout
+            </button>
+
+        </header>
+
+        <!-- CALENDAR -->
+
+        <div class="calendar" id="calendar"></div>
+
+        <!-- TASK SECTION -->
+
+        <div class="task-section">
+
+            <h2>Add Task Reminder</h2>
+
+            <input type="number"
+                id="taskDay"
+                placeholder="Enter Day (1-31)">
+
+            <input type="text"
+                id="taskText"
+                placeholder="Enter Your Task">
+
+            <input type="datetime-local"
+                id="taskTime">
+
+            <button onclick="addTask()">
+                Add Task
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
